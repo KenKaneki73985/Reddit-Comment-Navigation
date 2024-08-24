@@ -1,12 +1,14 @@
-
 // ==UserScript==
-// @name         Reddit Comment Navigation
+// @name         REDDIT: Comment Navigation
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  Navigate between parent comments on Reddit
+// @author       Ken Kaneki (https://github.com/KenKaneki73985/Reddit-Comment-Navigation)
 // @match        https://www.reddit.com/*
 // @grant        none
 // ==/UserScript==
+
+//  user_script = "moz-extension://762e4395-b145-4620-8dd9-31bf09e052de/options.html#nav=456d07d2-2ca3-4a29-bd4d-3d3b7726255f+editor"
 
 (function() {
     'use strict'
@@ -76,10 +78,3 @@
     // window.addEventListener('scroll', FIND_PARENT_COMMENTS);
 })()
 
-
-// prev_btn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>'
-// next_btn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>'
-
-
-//  instead of a text  prev_btn.textContent = 'prev', next_btn.textContent = 'next'
-// I want some down and up arrow logo/icon... how do I do that in tampermonkey?
